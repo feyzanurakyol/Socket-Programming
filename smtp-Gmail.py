@@ -38,8 +38,8 @@ print("STARTTLS Response: " + recvTls.decode())
 clientSocket = ssl.wrap_socket(clientSocket)
 
 #Username and password information
-username = "deneme1530@gmail.com"                    
-password = "EK123456"              
+username = "@gmail.com"                    
+password = ""              
 base64_str = ("\x00"+username +"\x00"+password).encode()
 base64_str =  base64.b64encode(base64_str) #bu ne yapıyo bi baksana
 authentMessage = "AUTH PLAIN ".encode() + base64_str + "\r\n".encode()
