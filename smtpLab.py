@@ -31,8 +31,8 @@ if recv1[0:3] != b'250':
 
 
 #Username and password information
-username = "fnuakyol@gtu.edu.tr"                    
-password = "DM1sPbFXtQrR"              
+username = " "                   
+password = "   "      
 base64_str = ("\x00"+username +"\x00"+password).encode()
 base64_str =  base64.b64encode(base64_str) #bu ne yapıyo bi baksana
 authentMessage = "AUTH PLAIN ".encode() + base64_str + "\r\n".encode()
